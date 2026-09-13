@@ -1,179 +1,187 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kotoha — VTuber Klover</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Susilo Bambang Yudhoyono — Beranda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600&family=IBM+Plex+Mono:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="wrap">
-      <nav class="main-nav">
-        <a class="logo" href="#top">
-          <span class="mark"><span class="leaf"></span><span class="leaf"></span><span class="leaf"></span><span class="leaf"></span></span>
-          Kotoha
-        </a>
-
-        <input type="checkbox" id="nav-toggle">
-
-        <ul class="nav-links">
-          <li><a href="#momen">Momen</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-          <li><a href="cv.html">CV Lengkap</a></li>
-        </ul>
-
-        <a class="nav-cta" href="cv.html">Lihat CV</a>
-
-        <label class="nav-burger" for="nav-toggle" aria-label="Buka menu">
-          <span></span><span></span><span></span>
-        </label>
+  <header class="site-header" id="top">
+    <div class="nav">
+      <a href="index.html" class="logo">SBY</a>
+      <input type="checkbox" id="nav-toggle" class="nav__toggle-input" />
+      <label for="nav-toggle" class="nav__toggle" aria-label="Buka menu"><span></span><span></span><span></span></label>
+      <nav class="nav__links">
+        <a href="index.html" class="is-active">Beranda</a>
+        <a href="kinerja-warisan.html">Kinerja &amp; Warisan</a>
+        <a href="creative-cv.html">Creative CV</a>
       </nav>
+      <div class="nav__actions">
+        <a href="creative-cv.html" class="btn btn--lg"><span class="btn__dot"></span>Creative CV</a>
+      </div>
     </div>
   </header>
 
-  <main id="top">
-
-    <section class="hero">
-      <div class="hero-panel">
-        <div class="decor-leaf d1"></div>
-        <div class="decor-leaf d2"></div>
-
-        <div class="hero-id">
-          <div class="avatar-ring">
-            <div class="clover"><span class="leaf"></span><span class="leaf"></span><span class="leaf"></span><span class="leaf"></span></div>
-          </div>
-          <h1>Kotoha</h1>
-          <p class="role">Vokalis di AiceClass, bagian dari unit vokal Hakoniwa Lily bersama Hanon.</p>
-        </div>
-
-        <div class="social-row">
-          <a href="https://www.youtube.com/channel/UC3ql_EU4JnaE3Rh3cqbHu6g" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://twitter.com/Kotoha_ktnh" target="_blank" rel="noopener">X</a>
-          <a href="https://www.tiktok.com/@hanon_kotoha" target="_blank" rel="noopener">TikTok</a>
-        </div>
-      </div>
-
-      <div class="hero-copy">
-        <span class="eyebrow">Vokalis Hakoniwa Lily</span>
-        <h2>Suara jernih yang membuat siapa pun ingin mendengar lebih lama.</h2>
-        <p class="lead">
-          Kotoha adalah vokalis unit "Hakoniwa Lily", dikenal lewat suaranya
-          yang bening dan memikat. Ia terjun ke dunia virtual karena ingin
-          mencoba lebih dari sekadar bernyanyi &mdash; termasuk siaran game
-          dan obrolan santai &mdash; dan kini berkarya bersama Hanon sebagai
-          bagian dari AiceClass.
+  <!-- HERO dengan foto asli -->
+  <section class="hero-photo">
+    <div class="hero-photo__grid">
+      <div>
+        <span class="hero-photo__kicker">Republik Indonesia &bull; 2004 &ndash; 2014</span>
+        <h1 class="hero-photo__title">Susilo Bambang Yudhoyono</h1>
+        <p class="hero-photo__tagline">
+          Dari perjalanan seorang perwira TNI Angkatan Darat menuju satu dekade
+          kepemimpinan nasional, sebagai presiden pertama Indonesia yang dipilih
+          langsung oleh rakyat.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="cv.html">Lihat CV Kreatif</a>
-          <a class="btn btn-secondary" href="#momen">Lihat Momen</a>
+        <div class="hero-photo__actions">
+          <a href="#gagasan" class="btn btn--lg btn--outline-cream"><span class="btn__dot"></span>Jelajahi Kepemimpinan</a>
+          <a href="creative-cv.html" class="btn btn--lg btn--outline-cream">Lihat Creative CV</a>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="momen">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Momen &amp; Pencapaian</span>
-          <h2>Beberapa momen favorit penonton</h2>
-          <p>Arahkan kursor ke setiap kartu untuk melihat detailnya.</p>
-        </div>
-
-        <div class="moments-grid">
-          <div class="moment-card">
-            <div class="moment-overlay"><span>Lihat</span></div>
-            <div class="moment-caption">
-              <strong>Siaran Debut</strong>
-              <span>Malam pertama ia menyapa dunia</span>
-            </div>
-          </div>
-          <div class="moment-card">
-            <div class="moment-overlay"><span>Lihat</span></div>
-            <div class="moment-caption">
-              <strong>Lagu Original Pertama</strong>
-              <span>"Empat Daun, Satu Harapan"</span>
-            </div>
-          </div>
-          <div class="moment-card">
-            <div class="moment-overlay"><span>Lihat</span></div>
-            <div class="moment-caption">
-              <strong>Kolaborasi Hutan Kecil</strong>
-              <span>Siaran bersama sesama VTuber indie</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="wrap">
-      <div class="cta-banner">
-        <div>
-          <h3>Ingin tahu perjalanan lengkapnya?</h3>
-          <p>Latar belakang, rekam jejak siaran, dan kemampuannya ada di halaman CV.</p>
-        </div>
-        <a class="btn btn-primary" href="cv.html">Lihat Rekam Jejak Lengkap (Creative CV)</a>
+      <div class="hero-photo__frame">
+        <img src="images/foto-sby.jpg" alt="Foto Susilo Bambang Yudhoyono">
+        <span class="hero-photo__tag">Presiden ke-6</span>
       </div>
     </div>
 
-    <section class="section" id="kontak">
-      <div class="wrap contact-grid">
-        <form class="contact-form">
-          <div class="form-row">
-            <div class="field">
-              <label for="nama">Nama Lengkap</label>
-              <input type="text" id="nama" placeholder="Nama kamu">
-            </div>
-            <div class="field">
-              <label for="email">Alamat Email</label>
-              <input type="email" id="email" placeholder="kamu@email.com">
-            </div>
-          </div>
-          <div class="field">
-            <label for="pesan">Pesan untuk Kotoha</label>
-            <textarea id="pesan" rows="4" placeholder="Tulis sapaan, kesan, atau permintaan lagu..."></textarea>
-          </div>
-          <button class="btn btn-primary" type="button" style="align-self:flex-start;">Kirim Pesan &rarr;</button>
-        </form>
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>PRESIDEN TERPILIH LANGSUNG PERTAMA ✦ PERDAMAIAN ACEH — MoU HELSINKI 2005 ✦ DUA PERIODE 2004–2014 ✦ KUR DILUNCURKAN 2007 ✦ PERAN AKTIF ASEAN &amp; G20 ✦&nbsp;</span>
+        <span aria-hidden="true">PRESIDEN TERPILIH LANGSUNG PERTAMA ✦ PERDAMAIAN ACEH — MoU HELSINKI 2005 ✦ DUA PERIODE 2004–2014 ✦ KUR DILUNCURKAN 2007 ✦ PERAN AKTIF ASEAN &amp; G20 ✦&nbsp;</span>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-info">
-          <div class="item">
-            <span class="ic">@</span>
-            <div>
-              <strong>Email Manajemen</strong><br>
-              <span style="color:var(--ink-soft);">kontak@kotoha-vt.example</span>
-            </div>
+  <main>
+
+    <!-- SIAPA SBY -->
+    <section class="intro" id="siapa-sby">
+      <div class="intro__head">
+        <p class="eyebrow"><span class="eyebrow__bolt">⚡</span> Mengenal SBY</p>
+        <h2>Perwira, Negarawan, Presiden</h2>
+        <p class="intro__desc">
+          Susilo Bambang Yudhoyono &mdash; akrab disapa SBY &mdash; adalah purnawirawan
+          TNI Angkatan Darat dan negarawan Indonesia yang menjabat sebagai Presiden
+          Republik Indonesia ke-6 selama dua periode berturut-turut, 2004&ndash;2009
+          dan 2009&ndash;2014. Ia tercatat sebagai presiden pertama yang dipilih
+          langsung oleh rakyat sejak pemilu presiden diberlakukan di Indonesia.
+        </p>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel__track">
+          <div class="feature-card feature-card--white">
+            <h3>Karier Militer</h3>
+            <p>Memulai karier sebagai perwira TNI AD pada 1973, dengan berbagai penugasan dan pendidikan militer selama lebih dari dua dekade.</p>
           </div>
-          <div class="item">
-            <span class="ic">#</span>
-            <div>
-              <strong>Jadwal Siaran</strong><br>
-              <span style="color:var(--ink-soft);">Selasa &amp; Jumat, 20:00 WIB</span>
-            </div>
+          <div class="feature-card feature-card--pink">
+            <h3>Masuk Pemerintahan</h3>
+            <p>Menduduki sejumlah jabatan strategis, termasuk Menteri Koordinator Politik dan Keamanan, sebelum terjun ke politik nasional.</p>
           </div>
-          <div class="item">
-            <span class="ic">*</span>
-            <div>
-              <strong>Hobi</strong><br>
-              <span style="color:var(--ink-soft);">Bernyanyi, main game, manisan, dan menjelajah kafe</span>
-            </div>
+          <div class="feature-card feature-card--green">
+            <h3>Dua Periode Presiden</h3>
+            <p>Terpilih sebagai Presiden RI pada 2004 dan kembali memenangkan pemilu 2009, memimpin Indonesia hingga 2014.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- STATISTIK RINGKAS -->
+    <section class="members" id="statistik">
+      <h2 class="members__title">10 Tahun Kepemimpinan</h2>
+      <div class="recap-grid">
+        <div class="recap-item" style="background:var(--white); border-color:var(--navy);"><p class="recap-item__value" style="color:var(--navy-deep);">10</p><p class="recap-item__label" style="color:var(--ink-oncream);">Tahun Memimpin Indonesia</p></div>
+        <div class="recap-item" style="background:var(--white); border-color:var(--navy);"><p class="recap-item__value" style="color:var(--navy-deep);">2004</p><p class="recap-item__label" style="color:var(--ink-oncream);">Awal Masa Kepresidenan</p></div>
+        <div class="recap-item" style="background:var(--white); border-color:var(--navy);"><p class="recap-item__value" style="color:var(--navy-deep);">2014</p><p class="recap-item__label" style="color:var(--ink-oncream);">Akhir Masa Kepresidenan</p></div>
+        <div class="recap-item" style="background:var(--white); border-color:var(--navy);"><p class="recap-item__value" style="color:var(--navy-deep);">2</p><p class="recap-item__label" style="color:var(--ink-oncream);">Periode Kepresidenan</p></div>
+      </div>
+      <div class="note-box" style="background:rgba(13,27,42,0.06); border-color:rgba(13,27,42,0.25);">
+        <p style="color:var(--ink-oncream);"><strong style="color:var(--navy-deep);">Catatan objektivitas:</strong> Angka-angka di atas adalah gambaran umum masa kepemimpinan dan bukan penilaian kinerja secara menyeluruh &mdash; rincian program dan dampaknya dibahas di halaman Kinerja &amp; Warisan.</p>
+      </div>
+    </section>
+
+    <!-- GAMBARAN BESAR KEPEMIMPINAN (teaser ke page 2) -->
+    <section class="membership" id="gambaran-besar">
+      <div class="membership__inner">
+        <div class="membership__copy">
+          <p class="eyebrow" style="color:var(--gold);"><span class="eyebrow__bolt">⚡</span> Gambaran Besar</p>
+          <h2 class="membership__title">Kerja Nyata, Membangun Indonesia dari Sabang sampai Merauke</h2>
+          <p class="membership__lede">Satu dekade kebijakan, program, dan pembangunan.</p>
+          <p class="membership__text">
+            Selama masa jabatannya, pemerintahan SBY menjalankan program-program
+            besar di bidang ekonomi, pengentasan kemiskinan, dan pembangunan
+            infrastruktur &mdash; salah satunya PNPM Mandiri, program pemberdayaan
+            masyarakat yang melibatkan warga langsung dalam menentukan pembangunan
+            di lingkungannya sendiri.
+          </p>
+          <a href="kinerja-warisan.html" class="btn btn--lg btn--outline-cream" style="margin-top:0.6rem;"><span class="btn__dot"></span>Lihat Kinerja &amp; Warisan Lengkap →</a>
+        </div>
+        <div class="membership__media">
+          <span class="membership__disco" aria-hidden="true">🏘️</span>
+          <img src="images/foto-pnpm.jpg" alt="Kegiatan PNPM Mandiri" class="media-photo">
+          <span class="badge badge--float">Rp14,4 T · RAPBN 2014</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAGASAN BESAR KEPEMIMPINAN -->
+    <section class="num-section" id="gagasan">
+      <div class="num-section__inner">
+        <div class="intro__head" style="margin-bottom:2.2rem;">
+          <p class="eyebrow"><span class="eyebrow__bolt">⚡</span> Enam Fokus Utama</p>
+          <h2>Gagasan Besar Kepemimpinan</h2>
+        </div>
+        <div class="grid-6">
+          <div class="simple-card"><span class="simple-card__num">01</span><h3>Pertumbuhan Ekonomi</h3><p>Mendorong pertumbuhan sekaligus memperluas investasi dan pembangunan infrastruktur.</p></div>
+          <div class="simple-card"><span class="simple-card__num">02</span><h3>Pengentasan Kemiskinan</h3><p>Mengembangkan bantuan sosial, pemberdayaan masyarakat, dan akses pembiayaan UMKM.</p></div>
+          <div class="simple-card"><span class="simple-card__num">03</span><h3>Pembangunan Infrastruktur</h3><p>Mempercepat pembangunan jalan, jembatan, bandara, energi, dan konektivitas antarwilayah.</p></div>
+          <div class="simple-card"><span class="simple-card__num">04</span><h3>Pembangunan Manusia</h3><p>Memperluas akses pendidikan dan kesehatan serta memperkuat perlindungan sosial.</p></div>
+          <div class="simple-card"><span class="simple-card__num">05</span><h3>Perdamaian Aceh</h3><p>MoU Helsinki 2005 mengakhiri konflik bersenjata berkepanjangan di Aceh.</p></div>
+          <div class="simple-card"><span class="simple-card__num">06</span><h3>Diplomasi</h3><p>Memperkuat keterlibatan Indonesia dalam ASEAN, G20, dan forum internasional.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERJALANAN SBY -->
+    <section style="background:var(--navy-soft); padding:4.5rem 1.5rem;">
+      <div class="num-section__inner">
+        <h2 style="color:var(--cream); font-size:clamp(1.5rem, 3vw, 2rem); text-align:center; margin-bottom:2.2rem;">Perjalanan SBY</h2>
+        <div class="grid-4">
+          <div class="journey-card"><p class="journey-card__period">1973 – 1999</p><h3>Militer</h3><p>Memulai karier sebagai perwira TNI dan menjalani berbagai penugasan.</p></div>
+          <div class="journey-card"><p class="journey-card__period">1999 – 2004</p><h3>Pemerintahan</h3><p>Memasuki pemerintahan dan menduduki sejumlah jabatan strategis.</p></div>
+          <div class="journey-card"><p class="journey-card__period">2004 – 2014</p><h3>Kepresidenan</h3><p>Memimpin Indonesia selama dua periode berturut-turut.</p></div>
+          <div class="journey-card"><p class="journey-card__period">2014 – sekarang</p><h3>Pascakepresidenan</h3><p>Tetap aktif dalam kegiatan politik, sosial, pendidikan, dan seni.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-footer">
+      <h2>Ingin Tahu Lebih Jauh?</h2>
+      <p>Jelajahi rincian program dan dampaknya, atau riwayat hidup lengkap lewat Creative CV.</p>
+      <div class="cta-footer__actions">
+        <a href="kinerja-warisan.html" class="btn btn--lg btn--outline-cream"><span class="btn__dot"></span>Kinerja &amp; Warisan →</a>
+        <a href="creative-cv.html" class="btn btn--lg btn--outline-cream">Creative CV →</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <span>Fan tribute template &middot; Kotoha adalah talent resmi AiceClass, tidak berafiliasi resmi</span>
-      <div class="social-row">
-        <a href="https://www.youtube.com/channel/UC3ql_EU4JnaE3Rh3cqbHu6g" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://twitter.com/Kotoha_ktnh" target="_blank" rel="noopener">X</a>
-        <a href="https://www.tiktok.com/@hanon_kotoha" target="_blank" rel="noopener">TikTok</a>
-      </div>
+  <footer class="site-header" style="border-top:1.4px solid var(--line-onnavy); border-bottom:none;">
+    <div class="nav" style="flex-direction:column; text-align:center; gap:1rem; padding:2.2rem 1.75rem;">
+      <p class="logo" style="font-size:1.3rem;">SBY</p>
+      <p style="font-size:0.82rem; color:var(--cream);">Negarawan • Purnawirawan TNI • Presiden ke-6 Republik Indonesia (2004–2014)</p>
+      <nav class="nav__links" style="flex-direction:row; text-transform:uppercase;">
+        <a href="index.html">Beranda</a>
+        <a href="kinerja-warisan.html">Kinerja &amp; Warisan</a>
+        <a href="creative-cv.html">Creative CV</a>
+        <a href="#top">Kembali ke atas ↑</a>
+      </nav>
+      <p style="font-size:0.7rem; color:rgba(251,248,242,0.5); max-width:520px;">Materi diolah dari dokumen resmi Sekretariat Negara &amp; Sekretariat Kabinet RI untuk kepentingan pembelajaran (tugas praktikum Pemrograman Web).</p>
     </div>
   </footer>
 

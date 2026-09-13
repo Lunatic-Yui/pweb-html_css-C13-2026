@@ -1,154 +1,244 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kotoha — CV Kreatif</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Creative CV — Susilo Bambang Yudhoyono</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600&family=IBM+Plex+Mono:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="cv-shell">
+  <header class="site-header" id="top">
+    <div class="nav">
+      <a href="index.html" class="logo">SBY</a>
+      <input type="checkbox" id="nav-toggle" class="nav__toggle-input" />
+      <label for="nav-toggle" class="nav__toggle" aria-label="Buka menu"><span></span><span></span><span></span></label>
+      <nav class="nav__links">
+        <a href="index.html">Beranda</a>
+        <a href="kinerja-warisan.html">Kinerja &amp; Warisan</a>
+        <a href="creative-cv.html" class="is-active">Creative CV</a>
+      </nav>
+      <div class="nav__actions"><a href="index.html" class="btn btn--lg">← Beranda</a></div>
+    </div>
+  </header>
 
-    <aside class="cv-sidebar">
-      <div class="decor-leaf d1"></div>
+  <!-- HERO (sama gaya page 2) -->
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <span class="hero__tag--left">Riwayat Hidup &amp; Rekam Jejak</span>
+      <h1 class="hero__title">
+        <span class="hero__line hero__line--marked">Creative</span>
+        <span class="hero__line hero__line--script">CV</span>
+      </h1>
+      <p>Sintesis kepemimpinan, pendidikan, karier militer, jabatan pemerintahan, karakter, keahlian, dan sisi personal Susilo Bambang Yudhoyono.</p>
+    </div>
+  </section>
 
-      <div>
-        <a class="back-link" href="index.html">&larr; Kembali ke Beranda</a>
-
-        <div class="cv-id">
-          <div class="avatar-ring" style="width:100px;height:100px;">
-            <div class="clover" style="width:40px;height:40px;">
-              <span class="leaf" style="width:20px;height:20px;"></span>
-              <span class="leaf" style="width:20px;height:20px;top:10px;left:20px;"></span>
-              <span class="leaf" style="width:20px;height:20px;top:20px;left:10px;"></span>
-              <span class="leaf" style="width:20px;height:20px;top:10px;left:0;"></span>
-            </div>
-          </div>
-          <h1>Kotoha</h1>
-          <p class="role">Vokalis Hakoniwa Lily &middot; AiceClass Artist Division</p>
-        </div>
-      </div>
-
-      <ul class="cv-meta">
-        <li>Ulang tahun: 10 Juni</li>
-        <li>Tinggi: 152 cm</li>
-        <li>Agensi: AiceClass</li>
-        <li>Rekan unit: Hanon</li>
-      </ul>
-    </aside>
-
-    <div class="cv-main">
-
-      <div class="stat-strip">
-        <div class="stat-box"><span class="num">10 Jun</span><span class="label">Ulang Tahun</span></div>
-        <div class="stat-box"><span class="num">152cm</span><span class="label">Tinggi Badan</span></div>
-        <div class="stat-box"><span class="num">2</span><span class="label">Anggota Unit</span></div>
-        <div class="stat-box"><span class="num">4</span><span class="label">Hobi Utama</span></div>
-      </div>
-
-      <section class="cv-block">
-        <div class="block-number">01 / Kepribadian &amp; Latar Belakang</div>
-        <h2>Siapa Kotoha</h2>
-        <p class="about-text">
-          Kotoha adalah vokalis unit vokal wanita "Hakoniwa Lily", dikenal
-          karena suaranya yang jernih dan memikat siapa pun yang
-          mendengarnya. Rasa ingin mencoba banyak hal &mdash; bernyanyi,
-          bermain gim, dan berinteraksi langsung dengan penonton &mdash;
-          membawanya melompat ke dunia virtual sebagai bagian dari divisi
-          artis AiceClass, berkarya berdampingan dengan Hanon.
-        </p>
-      </section>
-
-      <section class="cv-block">
-        <div class="block-number">02 / Rekam Jejak Siaran</div>
-        <h2>Perjalanan Sejauh Ini</h2>
-        <p style="font-size:0.85rem; color:var(--ink-soft); font-style:italic; margin:-14px 0 24px;">
-          Tanggal &amp; judul di bawah ini contoh placeholder &mdash; ganti dengan milestone asli.
-        </p>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="when">Maret 2025</div>
-            <h3>Siaran Debut</h3>
-            <div class="place">Kanal Pribadi</div>
-            <ul>
-              <li>Memperkenalkan lore Ladang Klover kepada penonton pertama</li>
-            </ul>
-            <div class="tag-row"><span>Debut</span><span>Ngobrol Santai</span></div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="when">Juli 2025</div>
-            <h3>Rilis Lagu Original Pertama</h3>
-            <div class="place">"Empat Daun, Satu Harapan"</div>
-            <ul>
-              <li>Menembus 50rb penayangan dalam minggu pertama</li>
-            </ul>
-            <div class="tag-row"><span>Musik</span><span>Original Song</span></div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="when">November 2025</div>
-            <h3>Kolaborasi Hutan Kecil</h3>
-            <div class="place">Bersama 3 VTuber indie lainnya</div>
-            <ul>
-              <li>Siaran gabungan bertema festival musim gugur</li>
-            </ul>
-            <div class="tag-row"><span>Kolaborasi</span><span>Variety</span></div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="when">Maret 2026</div>
-            <h3>Perayaan Satu Tahun Debut</h3>
-            <div class="place">Siaran Spesial 12 Jam</div>
-            <ul>
-              <li>Mengumumkan model Live2D baru dan lagu kedua</li>
-            </ul>
-            <div class="tag-row"><span>Milestone</span><span>Live2D Update</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cv-block">
-        <div class="block-number">03 / Latar Pelatihan</div>
-        <h2>Bagaimana Ia Belajar</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="when">2023 &ndash; 2024</div>
-            <h3>Kelas Vokal &amp; Olah Suara</h3>
-            <div class="place">Studio daring, bersama pelatih vokal indie</div>
-          </div>
-          <div class="timeline-item">
-            <div class="when">2024</div>
-            <h3>Workshop Produksi Siaran</h3>
-            <div class="place">Program mentor untuk VTuber pemula</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cv-block">
-        <div class="block-number">04 / Kemampuan</div>
-        <h2>Yang Ia Kuasai</h2>
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h4>Pertunjukan</h4>
-            <div class="tag-row"><span>Menyanyi</span><span>Siaran Santai</span><span>Storytelling</span></div>
-          </div>
-          <div class="skill-box">
-            <h4>Konten</h4>
-            <div class="tag-row"><span>Variety Games</span><span>Kolaborasi</span><span>Interaksi Chat</span></div>
-          </div>
-          <div class="skill-box">
-            <h4>Produksi</h4>
-            <div class="tag-row"><span>OBS Studio</span><span>Live2D</span><span>Edit Ringan</span></div>
-          </div>
-        </div>
-      </section>
-
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>PROFIL ✦ KARAKTER ✦ PENDIDIKAN ✦ KARIER MILITER ✦ KARIER PEMERINTAHAN ✦ PROGRAM ✦ PROYEK ✦ KEAHLIAN ✦ WARISAN ✦&nbsp;</span>
+      <span aria-hidden="true">PROFIL ✦ KARAKTER ✦ PENDIDIKAN ✦ KARIER MILITER ✦ KARIER PEMERINTAHAN ✦ PROGRAM ✦ PROYEK ✦ KEAHLIAN ✦ WARISAN ✦&nbsp;</span>
     </div>
   </div>
+
+  <main>
+
+    <!-- 00 PERSONAL PROFILE (kartu kecil, bukan grid polos seperti page 2) -->
+    <section class="num-section num-section--soft" id="profile">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">00</span>
+          <div><p class="num-section__kicker">Personal Profile</p><h2>Data Diri</h2></div>
+        </div>
+        <div class="profile-card-grid">
+          <div class="profile-card"><dt>Nama Lengkap</dt><dd>Susilo Bambang Yudhoyono</dd></div>
+          <div class="profile-card"><dt>Dikenal Sebagai</dt><dd>SBY</dd></div>
+          <div class="profile-card"><dt>Tempat, Tanggal Lahir</dt><dd>Pacitan, 9 September 1949</dd></div>
+          <div class="profile-card"><dt>Profesi</dt><dd>Negarawan, Purnawirawan TNI</dd></div>
+          <div class="profile-card"><dt>Masa Kepresidenan</dt><dd>2004 – 2014</dd></div>
+          <div class="profile-card"><dt>Wakil Presiden</dt><dd>Jusuf Kalla · Boediono</dd></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 KARAKTER KEPEMIMPINAN (hexagon, bukan kotak seperti page 2) -->
+    <section class="num-section" id="karakter">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">01</span>
+          <div><p class="num-section__kicker">Karakter Kepemimpinan</p><h2>Fondasi Gaya Memimpin</h2></div>
+        </div>
+        <div class="hex-grid">
+          <div class="hex-card"><h3>Leadership</h3><p>Memimpin organisasi militer hingga pemerintahan nasional.</p></div>
+          <div class="hex-card"><h3>Strategic Thinking</h3><p>Menyusun kebijakan jangka menengah dan panjang.</p></div>
+          <div class="hex-card"><h3>Diplomasi</h3><p>Aktif dalam hubungan bilateral dan multilateral.</p></div>
+          <div class="hex-card"><h3>Crisis Management</h3><p>Menghadapi tsunami Aceh dan krisis ekonomi global.</p></div>
+          <div class="hex-card"><h3>Public Communication</h3><p>Menyampaikan kebijakan lewat pidato dan komunikasi publik.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 RIWAYAT PENDIDIKAN (zigzag timeline, bukan vertical-line seperti page 2) -->
+    <section class="num-section num-section--soft" id="pendidikan">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">02</span>
+          <div><p class="num-section__kicker">Riwayat Pendidikan</p><h2>Perjalanan Akademik &amp; Militer</h2></div>
+        </div>
+        <div class="zigzag">
+          <div class="zigzag-row">
+            <div class="zigzag-row__card zigzag-row__card--left"><p class="zigzag-row__period">1973</p><h3>Akademi Angkatan Bersenjata RI</h3></div>
+            <div class="zigzag-row__dot"></div><div></div>
+          </div>
+          <div class="zigzag-row">
+            <div></div><div class="zigzag-row__dot"></div>
+            <div class="zigzag-row__card zigzag-row__card--right"><p class="zigzag-row__period">1980-an — 1990-an</p><h3>Pendidikan &amp; Pelatihan Militer</h3></div>
+          </div>
+          <div class="zigzag-row">
+            <div class="zigzag-row__card zigzag-row__card--left"><p class="zigzag-row__period">1991</p><h3>Master of Management</h3><p>Webster University, Amerika Serikat</p></div>
+            <div class="zigzag-row__dot"></div><div></div>
+          </div>
+          <div class="zigzag-row">
+            <div></div><div class="zigzag-row__dot"></div>
+            <div class="zigzag-row__card zigzag-row__card--right"><p class="zigzag-row__period">2004</p><h3>Doktor Ilmu Ekonomi Pertanian</h3><p>Institut Pertanian Bogor</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 & 04 KARIER MILITER / PEMERINTAHAN (zigzag juga tapi dua kolom terpisah via membership) -->
+    <section class="membership" id="karier">
+      <div class="membership__inner" style="align-items:flex-start;">
+        <div style="flex:1 1 380px;">
+          <p class="eyebrow" style="color:var(--gold);"><span class="eyebrow__bolt">⚡</span> 03 / Karier Militer</p>
+          <h2 class="membership__title" style="font-size:1.5rem; margin-bottom:1.3rem;">Dari Perwira hingga Purnawirawan</h2>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">1973</p><h3 class="timeline-entry__title">Memulai karier sebagai perwira TNI AD</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">1980-an</p><h3 class="timeline-entry__title">Berbagai penugasan &amp; pendidikan militer</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">1990-an</p><h3 class="timeline-entry__title">Posisi strategis dalam TNI</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">1999</p><h3 class="timeline-entry__title">Memasuki pemerintahan sipil</h3></div>
+        </div>
+        <div style="flex:1 1 380px;">
+          <p class="eyebrow" style="color:var(--gold);"><span class="eyebrow__bolt">⚡</span> 04 / Karier Pemerintahan</p>
+          <h2 class="membership__title" style="font-size:1.5rem; margin-bottom:1.3rem;">Jabatan Strategis</h2>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">1999–2000</p><h3 class="timeline-entry__title">Menteri Pertambangan dan Energi</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">2000–2001</p><h3 class="timeline-entry__title">Menko Politik, Sosial, dan Keamanan</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">2001–2004</p><h3 class="timeline-entry__title">Menko Politik dan Keamanan</h3></div>
+          <div class="timeline-entry timeline-entry--onnavy"><p class="timeline-entry__period">2004–2014</p><h3 class="timeline-entry__title">Presiden Republik Indonesia (2 periode)</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 PROGRAM & KEBIJAKAN (diamond cards, bukan skill-chip biasa) -->
+    <section class="num-section" id="program">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">05</span>
+          <div><p class="num-section__kicker">Program &amp; Kebijakan Utama</p><h2>Enam Program Unggulan</h2></div>
+        </div>
+        <div class="diamond-grid">
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>MP3EI</h3><p>Percepatan ekonomi &amp; infrastruktur</p></div></div>
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>PNPM Mandiri</h3><p>Pemberdayaan masyarakat</p></div></div>
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>KUR</h3><p>Akses pembiayaan UMKM</p></div></div>
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>SJSN / BPJS</h3><p>Jaminan sosial &amp; kesehatan</p></div></div>
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>10.000 MW</h3><p>Kapasitas listrik nasional</p></div></div>
+          <div class="diamond-card"><div class="diamond-card__inner"><h3>Perdamaian Aceh</h3><p>MoU Helsinki &amp; reintegrasi</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 PROYEK INFRASTRUKTUR (cut-card diagonal, bukan rounded seperti page 2) -->
+    <section class="num-section num-section--soft" id="proyek">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">06</span>
+          <div><p class="num-section__kicker">Proyek Infrastruktur</p><h2>Mini Portfolio</h2></div>
+        </div>
+        <div class="cut-card-grid">
+          <div class="cut-card"><span class="cut-card__tag">2009</span><h3>Jembatan Suramadu</h3><p>Konektivitas Surabaya–Madura.</p></div>
+          <div class="cut-card"><span class="cut-card__tag">2013</span><h3>Tol Bali Mandara</h3><p>Tol pertama Indonesia di atas laut.</p></div>
+          <div class="cut-card"><span class="cut-card__tag">2013</span><h3>Kelok Sembilan</h3><p>Konektivitas Sumatera Barat.</p></div>
+          <div class="cut-card"><span class="cut-card__tag">2014</span><h3>Terminal 2 Juanda</h3><p>Pengembangan kapasitas bandara.</p></div>
+          <div class="cut-card"><span class="cut-card__tag">2013–2014</span><h3>Jalur Kualanamu</h3><p>Konektivitas kereta bandara.</p></div>
+          <div class="cut-card"><span class="cut-card__tag">2011–2014</span><h3>Proyek MP3EI</h3><p>Infrastruktur &amp; sektor riil.</p></div>
+        </div>
+        <p class="source-note" style="text-align:center; margin-top:1.6rem;">Proyek dilaksanakan lintas kementerian, pemerintah daerah, BUMN, dan swasta.<span class="source-tag">Setneg</span></p>
+      </div>
+    </section>
+
+    <!-- 07 BIDANG KEAHLIAN (meter lingkaran, bukan bintang seperti sebelumnya) -->
+    <section class="num-section" id="keahlian">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">07</span>
+          <div><p class="num-section__kicker">Bidang Keahlian</p><h2>Kompetensi Kepemimpinan</h2></div>
+        </div>
+        <div class="meter-grid">
+          <div class="meter-card"><div class="meter-ring" style="--pct:95%"><span>95%</span></div><h3>Kepemimpinan</h3></div>
+          <div class="meter-card"><div class="meter-ring" style="--pct:90%"><span>90%</span></div><h3>Strategi</h3></div>
+          <div class="meter-card"><div class="meter-ring" style="--pct:92%"><span>92%</span></div><h3>Diplomasi</h3></div>
+          <div class="meter-card"><div class="meter-ring" style="--pct:88%"><span>88%</span></div><h3>Komunikasi</h3></div>
+          <div class="meter-card"><div class="meter-ring" style="--pct:90%"><span>90%</span></div><h3>Manajemen Krisis</h3></div>
+          <div class="meter-card"><div class="meter-ring" style="--pct:93%"><span>93%</span></div><h3>Militer</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 SISI PERSONAL (tetap grid warna seperti sebelumnya, konsisten dengan gagasan besar di page 1) -->
+    <section class="num-section num-section--soft" id="personal">
+      <div class="num-section__inner">
+        <div class="num-section__head">
+          <span class="num-section__number num-section__number--circle">08</span>
+          <div><p class="num-section__kicker">Sisi Personal</p><h2>Di Luar Jabatan Publik</h2></div>
+        </div>
+        <div class="personal-grid">
+          <div class="personal-card"><h3>Menulis</h3><p>Ketertarikan terhadap kegiatan menulis dan menghasilkan berbagai karya tulisan.</p></div>
+          <div class="personal-card"><h3>Musik</h3><p>Aktivitas kreatif yang ditekuni di luar aktivitas politik.</p></div>
+          <div class="personal-card"><h3>Seni</h3><p>Sisi lain kehidupan SBY di luar jabatan publik.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 WARISAN KEPEMIMPINAN (diamond juga tapi warna beda, konsisten dgn recap page 2 secara makna) -->
+    <section class="members" id="warisan">
+      <h2 class="members__title">09 / Warisan Kepemimpinan</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 2rem; font-size:0.92rem; color:var(--ink-oncream);">Sepuluh tahun pemerintahan SBY meninggalkan kebijakan dan proyek yang menjadi bagian dari perkembangan Indonesia pada periode berikutnya.</p>
+      <div class="diamond-grid">
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Ekonomi</h3><p>Pertumbuhan &amp; stabilitas</p></div></div>
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Infrastruktur</h3><p>Konektivitas antarwilayah</p></div></div>
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Kesehatan</h3><p>Awal implementasi JKN/BPJS</p></div></div>
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Kemiskinan</h3><p>PNPM, PKH, KUR</p></div></div>
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Perdamaian</h3><p>MoU Helsinki Aceh</p></div></div>
+        <div class="diamond-card" style="background:var(--navy-deep);"><div class="diamond-card__inner"><h3>Diplomasi</h3><p>Peran regional &amp; global</p></div></div>
+      </div>
+    </section>
+
+    <section class="cta-footer">
+      <h2>Lihat Kinerja Selama Menjabat</h2>
+      <div class="cta-footer__actions">
+        <a href="kinerja-warisan.html" class="btn btn--lg btn--outline-cream"><span class="btn__dot"></span>Kinerja &amp; Warisan →</a>
+        <a href="index.html" class="btn btn--lg btn--outline-cream">Kembali ke Beranda</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-header" style="border-top:1.4px solid var(--line-onnavy); border-bottom:none;">
+    <div class="nav" style="flex-direction:column; text-align:center; gap:1rem; padding:2.2rem 1.75rem;">
+      <p class="logo" style="font-size:1.3rem;">SBY</p>
+      <p style="font-size:0.82rem; color:var(--cream);">Negarawan • Purnawirawan TNI • Presiden ke-6 Republik Indonesia (2004–2014)</p>
+      <nav class="nav__links" style="flex-direction:row; text-transform:uppercase;">
+        <a href="index.html">Beranda</a>
+        <a href="kinerja-warisan.html">Kinerja &amp; Warisan</a>
+        <a href="creative-cv.html">Creative CV</a>
+        <a href="#top">Kembali ke atas ↑</a>
+      </nav>
+      <p style="font-size:0.7rem; color:rgba(251,248,242,0.5); max-width:520px;">Materi diolah dari dokumen resmi Sekretariat Negara &amp; Sekretariat Kabinet RI untuk kepentingan pembelajaran (tugas praktikum Pemrograman Web).</p>
+    </div>
+  </footer>
 
 </body>
 </html>
